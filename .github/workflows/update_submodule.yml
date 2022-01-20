@@ -14,6 +14,7 @@ jobs:
         with: 
           repository: AlphaLabsUY/odoo_education_docker
           token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
+          submodules: 'true'
 
       - name: Pull & update submodules recursively
         run: |
